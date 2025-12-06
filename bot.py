@@ -1,7 +1,7 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # <-- replace with your Telegram bot token
+BOT_TOKEN = "8565813512:AAENGci1ks3Dw3Yiv8cJODzCg6rhlGvBa4g"  # <-- replace with your Telegram bot token
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bot is online. Ready to receive commands.")

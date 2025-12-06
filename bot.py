@@ -8,5 +8,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = ApplicationBuilder().token(BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
-
+async def ping(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("Pong! Bot is active.")
 app.run_polling()
